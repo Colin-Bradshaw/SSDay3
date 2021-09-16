@@ -44,5 +44,4 @@ public class CharSearch {
 			System.out.println("Specified character was found: " + counter + " times in the file.");
 		}
 	}
-
 }
