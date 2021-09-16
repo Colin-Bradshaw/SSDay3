@@ -40,7 +40,6 @@ public class CharSearch {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			
 			in.close();
 			System.out.println("Specified character was found: " + counter + " times in the file.");
 		}
