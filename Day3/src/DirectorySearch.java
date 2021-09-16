@@ -20,7 +20,7 @@ public class DirectorySearch {
 		Scanner in = new Scanner(System.in);
 		System.out.print("Enter the absolute path of the directory to search: ");
 		String path = in.nextLine();
-		
+		// do not create a null file
 		if(path!= null) {
 			File origin = new File(path);
 			ds.printDirsAndFiles(origin);

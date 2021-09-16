@@ -29,6 +29,7 @@ public class CharSearch {
 		
 		try (BufferedReader br = new BufferedReader(new FileReader(new File(path)));){
 			while((line = br.readLine()) != null) {
+				// convert string to char array. Iterate over contents and increment counter on a match
 				char[] searchLine = line.toCharArray();
 				for(char x: searchLine) {
 					if(x==search) {

@@ -22,6 +22,7 @@ public class AppendToFile {
 		System.out.print("Enter the text you would like to append: ");
 		String text = in.nextLine();
 		try (BufferedWriter bf = new BufferedWriter(new FileWriter(new File(path), true))){
+			// if file does not exist, it is created
 			bf.append(text);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
